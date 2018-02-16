@@ -1,0 +1,9 @@
+.container {
+  padding: 2em;
+  border-radius: 0.5em;
+  width: 20em;
+}
+
+.suggestions{
+  border: 1px solid grey;
+}

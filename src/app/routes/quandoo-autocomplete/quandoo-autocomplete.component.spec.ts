@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { QuandooAutocompleteComponent } from './quandoo-autocomplete.component';
+import { AppModule } from '../../app.module';
 
 describe('QuandooAutocompleteComponent', () => {
   let component: QuandooAutocompleteComponent;
@@ -8,7 +9,8 @@ describe('QuandooAutocompleteComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ QuandooAutocompleteComponent ]
+      declarations: [],
+      imports: [AppModule]
     })
     .compileComponents();
   }));
@@ -22,4 +24,10 @@ describe('QuandooAutocompleteComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should have as title 'app'`, async(() => {
+    fixture = TestBed.createComponent(QuandooAutocompleteComponent);
+    const app = fixture.debugElement.componentInstance;
+    expect(app.query).toEqual('');
+  }));
 });
