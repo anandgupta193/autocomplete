@@ -1,13 +1,10 @@
-<div class="container" >
-  <div class="input-field col s12">
-    <input id="country" type="text" class="validate filter-input" [(ngModel)]="query" (keyup)=filter()>
-    <label for="country">Country</label>
+<div class="container">
+  <div class="input-field">
+    <input id="country" placeholder="Search Country" type="text" [(ngModel)]="query" (keyup)=filter()>
   </div>
-  <div class="suggestions" *ngIf="filteredList.length > 0">
-      <ul>
-          <li *ngFor="let item of filteredList">
-              <a (click)="select(item)">{{item}}</a>
-          </li>
-      </ul>
+  <div *ngIf="filteredList.length > 0">
+    <div *ngFor="let item of filteredList" class="suggestions-container">
+      <a (click)="select(item)">{{item}}</a>
+    </div>
   </div>
 </div>
