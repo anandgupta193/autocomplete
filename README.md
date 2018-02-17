@@ -21,6 +21,15 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `npm test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
+## Prerequisites
+
+Angular cli - 1.6.7
+Node Js - v9.4.0
+Npm - 5.6.0
+
 ## Author
 
 This is project is developed by Anand Gupta. (Assignment Project)
+
+
+
