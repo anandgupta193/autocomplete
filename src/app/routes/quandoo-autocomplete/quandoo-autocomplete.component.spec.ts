@@ -25,7 +25,7 @@ describe('QuandooAutocompleteComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it(`should have as title 'app'`, async(() => {
+  it(`should have default query as title ''`, async(() => {
     fixture = TestBed.createComponent(QuandooAutocompleteComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app.query).toEqual('');
